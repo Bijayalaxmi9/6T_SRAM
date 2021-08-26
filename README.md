@@ -63,10 +63,14 @@ Here the column voltage Vc is forced to logic 0 level by data write circuitry, s
 When V1=Vtn, the transistor M3 operates in the **linear region**, M5 operates in **saturation region**.
 
 Here Id3=Id5, after solving this we get,
+
 ![eq-2 for write operations](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/Eq-2.jpeg)
 
+
 So after solving above two equations by putting all the required values we get,
+
 ![eq-3 (W5/W3)](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/Eq-3.jpeg)
+
 
 ![eq-4(W3/W1)](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/Eq-4.jpeg)	     
 
@@ -82,4 +86,3 @@ Here
 	 
 
    
- 
