@@ -1,7 +1,7 @@
 # 6T SRAM
 ## Table of Contents:
 
- - [Overview](##Overview)
+ - [Overview](https://github.com/Bijayalaxmi9/6T_SRAM##Overview)
  - [Sizing & Modes of Operations](https://github.com/Bijayalaxmi9/6T_SRAM##Sizing_&_Modes_of_Operations)
  - [Pre-layout](https://github.com/Bijayalaxmi9/6T_SRAM##Pre-layout)
 	 - [DC Analysis](https://github.com/Bijayalaxmi9/6T_SRAM##DC_Analysis)
