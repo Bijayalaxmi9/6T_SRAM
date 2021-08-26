@@ -1,7 +1,4 @@
 
-
-
-> Written with [StackEdit](https://stackedit.io/).
 # 6T SRAM
 ## Table of Contents:
 
@@ -47,6 +44,7 @@ Assuming logic 0 is stored in the cell i.e,
 
 The key design issue for the data-read operation is to guarantee that the voltage V1, does not exceed the threshold voltage of M2 so that the transistor M2 remains turned off during the read phase, i.e., V1 ≤ Vtn. So here the main constraint is V1 ≤ Vtn i.e the strength of M1 should be high than the strength of M3 otherwise data read operation can't be happen. Here M3 operates in **saturation region** and M1 operates in **linear region**.
 Here Id3=Id1,so after solving this we get;
+
 ![eq-1](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/Eq-1.jpeg)
 
 ----
@@ -80,9 +78,31 @@ Here
 - **W1**=3um, **L1**=0.4um
 ---
 ## Pre-layout
-## Dc_Analysis:
+## DC_Analysis:
 
 
+![VTC curve of inverter](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/VTC%20curve.png)
+
+From the DC Analysis we can get the operating point of the CMOS Inverters. Here it is 1.20V.
+
+---
+## Hold_SNM
+
+![Hold_SNM](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/SNM_Hold.png)
 	 
 
+## Read_SNM
+
+![Read_SNM](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/SNM_Read.png)
    
+
+---
+## Acknowledgement
+
+-   Dr.Saroj Rout,Associate Professor,Silicon Institute Of Technology,Bhubaneswar
+-   Mr.Santunu Sarangi,Assistant Professor,Silicon Institute Of Technology,Bhubaneswar
+- ---
+## Future Works
+-   Transient Analysis
+- To create the layout using Magic.
+-   To do post layout simulation.
