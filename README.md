@@ -1,15 +1,16 @@
 # 6T SRAM
 ## Table of Contents:
 
- - [Overview](##Overview)
- - [Sizing & Modes of Operations](##Sizing_&_Modes_of_Operations)
- - [Pre-layout](##Pre-layout)
-	 - [DC Analysis](##DC_Analysis)
-	 - [Hold SNM](##Hold_SNM)
-	 - [Read SNM](##Read_SNM)
-- [Acknowledgement](##Acknowledgement)
-- [Future Works](##Future_works)
-----
+ - [Overview](https://github.com/Bijayalaxmi9/6T_SRAM##Overview)
+ - [Sizing & Modes of Operations](https://github.com/Bijayalaxmi9/6T_SRAM##Sizing_&_Modes_of_Operations)
+ - [Pre-layout](https://github.com/Bijayalaxmi9/6T_SRAM##Pre-layout)
+	 - [DC Analysis](https://github.com/Bijayalaxmi9/6T_SRAM##DC_Analysis)
+	 - [Hold SNM](https://github.com/Bijayalaxmi9/6T_SRAM##Hold_SNM)
+	 - [Read SNM](https://github.com/Bijayalaxmi9/6T_SRAM##Read_SNM)
+- [Acknowledgement](https://github.com/Bijayalaxmi9/6T_SRAM##Acknowledgement)
+- [Future Works](https://github.com/Bijayalaxmi9/6T_SRAM##Future_works)
+- [Contact Information](https://github.com/Bijayalaxmi9/6T_SRAM##Contact_Information)
+- ----
 ## Overview
 The project is generally focused on the design of 1k*32-bit 6T SRAM memory design.
 - SRAM Specification:
@@ -46,6 +47,7 @@ Assuming logic 0 is stored in the cell i.e,
 -  Data stored at node 1 is to be read.
 
 The key design issue for the data-read operation is to guarantee that the voltage V1, does not exceed the threshold voltage of M2 so that the transistor M2 remains turned off during the read phase, i.e., V1 ≤ Vtn. So here the main constraint is V1 ≤ Vtn i.e the strength of M1 should be high than the strength of M3 otherwise data read operation can't be happen. Here M3 operates in **saturation region** and M1 operates in **linear region**.
+
 Here Id3=Id1,so after solving this we get;
 
 ![eq-1](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/Eq-1.jpeg)
@@ -109,3 +111,7 @@ From the DC Analysis we can get the operating point of the CMOS Inverters. Here 
 -   Transient Analysis
 - To create the layout using Magic.
 -   To do post layout simulation.
+- ---
+## Contact_Information
+-   Bijayalaxmi Sahoo, Design Engineer,  [Sevya Multimedia Technologies Pvt. Ltd.](https://sevyamultimedia.com/)
+-   [bijayalaxmisahoo100@gmail.com](mailto:bijayalaxmisahoo100@gmail.com)
