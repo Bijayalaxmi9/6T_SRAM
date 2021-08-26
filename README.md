@@ -1,4 +1,3 @@
-
 # 6T SRAM
 ## Table of Contents:
 
@@ -23,8 +22,12 @@ There are three modes of operations.
 - Hold State
 - Read Mode
 - Write Mode
+
 6T SRAM cell circuit diagram:
-![6T SRAM circuit diagram](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/6tsram.jpg)All parameters:
+
+![6T SRAM circuit diagram](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/6tsram.jpg)
+
+All parameters:
 - Vdd=5V
 - For NMOS:
 	- Vtn =0.496v
