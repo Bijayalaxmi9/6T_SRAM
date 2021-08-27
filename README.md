@@ -120,7 +120,7 @@ From the DC Analysis we can get the operating point of the CMOS Inverters. Here 
 -   Dr.Saroj Rout,Associate Professor,Silicon Institute Of Technology,Bhubaneswar
 -   Mr.Santunu Sarangi,Assistant Professor,Silicon Institute Of Technology,Bhubaneswar
 - ---
-## Future Works
+## Future_Works
 -   Transient Analysis
 - To create the layout using Magic.
 -   To do post layout simulation.
