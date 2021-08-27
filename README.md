@@ -1,15 +1,15 @@
 # 6T SRAM
 ## Table of Contents:
 
- - [Overview](https://github.com/Bijayalaxmi9/6T_SRAM##Overview)
- - [Sizing & Modes of Operations](https://github.com/Bijayalaxmi9/6T_SRAM##Sizing_&_Modes_of_Operations)
- - [Pre-layout](https://github.com/Bijayalaxmi9/6T_SRAM##Pre-layout)
-	 - [DC Analysis](https://github.com/Bijayalaxmi9/6T_SRAM##DC_Analysis)
-	 - [Hold SNM](https://github.com/Bijayalaxmi9/6T_SRAM##Hold_SNM)
-	 - [Read SNM](https://github.com/Bijayalaxmi9/6T_SRAM##Read_SNM)
-- [Acknowledgement](Acknowledgement)
-- [Future Works](https://github.com/Bijayalaxmi9/6T_SRAM##Future_works)
-- [Contact Information](https://github.com/Bijayalaxmi9/6T_SRAM##Contact_Information)
+ - [Overview](##Overview)
+ - [Sizing & Modes of Operations](##Sizing_&_Modes_of_Operations)
+ - [Pre-layout](##Pre-layout)
+	 - [DC Analysis](##DC_Analysis)
+	 - [Hold SNM](##Hold_SNM)
+	 - [Read SNM](##Read_SNM)
+- [Acknowledgement](##Acknowledgement)
+- [Future Works](##Future_works)
+- [Contact Information](##Contact_Information)
 - ----
 ## Overview
 The project is generally focused on the design of 1k*32-bit 6T SRAM memory design.
