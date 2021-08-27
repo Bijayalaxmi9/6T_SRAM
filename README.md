@@ -24,6 +24,11 @@ There are three modes of operations.
 - Read Mode
 - Write Mode
 
+6T SRAM cell Block Diagram:
+
+![Blockdiagram](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/6T_SRAMCell.jpg)
+
+
 6T SRAM cell circuit diagram:
 
 ![6T SRAM circuit diagram](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/6tsram.jpg)
@@ -96,12 +101,14 @@ From the DC Analysis we can get the operating point of the CMOS Inverters. Here 
 ![SNM_Hold diag](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/SNM_Hold.jpg)
 
 
+
 ![Hold_SNM](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/SNM_Hold.png)
 	 
 
 ## Read_SNM
 
 ![SNM_Read_diag](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/SNM_Read.jpg)
+
 
 
 ![Read_SNM](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/SNM_Read.png)
