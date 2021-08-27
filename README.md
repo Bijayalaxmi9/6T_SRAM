@@ -93,10 +93,16 @@ From the DC Analysis we can get the operating point of the CMOS Inverters. Here 
 ---
 ## Hold_SNM
 
+![SNM_Hold diag](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/SNM_Hold.jpg)
+
+
 ![Hold_SNM](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/SNM_Hold.png)
 	 
 
 ## Read_SNM
+
+![SNM_Read_diag](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/SNM_Read.jpg)
+
 
 ![Read_SNM](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/SNM_Read.png)
    
