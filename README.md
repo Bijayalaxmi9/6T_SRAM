@@ -79,16 +79,16 @@ So after solving above two equations by putting all the required values we get,
 
 Here 
 - **W5**=0.6um, **L5**=0.4um
-- **W3**=0.9um, **L3**=0.4um
-- **W1**=3um, **L1**=0.4um
+- **W3**=1um, **L3**=0.4um
+- **W1**=4um, **L1**=0.4um
 ---
 ## Pre-layout
 ## DC_Analysis:
 
 
-![VTC curve of inverter](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/VTC%20curve.png)
+![VTC_inverter](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/VTC_inverter.png)
 
-From the DC Analysis we can get the operating point of the CMOS Inverters. Here it is 1.20V.
+From the DC Analysis we can get the operating point of the CMOS Inverters. Here it is 1.12V.
 
 ---
 ## Hold_SNM
