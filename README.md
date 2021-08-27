@@ -1,15 +1,15 @@
 # 6T SRAM
 ## Table of Contents:
 
- - [Overview](##Overview)
- - [Sizing & Modes of Operations](##Sizing_&_Modes_of_Operations)
- - [Pre-layout](##Pre-layout)
-	 - [DC Analysis](##DC_Analysis)
-	 - [Hold SNM](##Hold_SNM)
-	 - [Read SNM](##Read_SNM)
-- [Acknowledgement](##Acknowledgement)
-- [Future Works](##Future_works)
-- [Contact Information](##Contact_Information)
+ - [Overview](#Overview)
+ - [Sizing & Modes of Operations](#Sizing_&_Modes_of_Operations)
+ - [Pre-layout](#Pre-layout)
+	 - [DC Analysis](#DC_Analysis)
+	 - [Hold SNM](#Hold_SNM)
+	 - [Read SNM](#Read_SNM)
+- [Acknowledgement](#Acknowledgement)
+- [Future Works](#Future_works)
+- [Contact Information](#Contact_Information)
 - ----
 ## Overview
 The project is generally focused on the design of 1k*32-bit 6T SRAM memory design.
