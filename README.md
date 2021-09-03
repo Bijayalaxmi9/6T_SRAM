@@ -13,7 +13,7 @@
 - [Future Works](#Future_works)
 - [Contact Information](#Contact_Information)
 - ----
-## Design_6T_SRAM
+## Design_of_6T_SRAM
 The project is generally focused on the design of 1k*32-bit 6T SRAM memory design.
 - SRAM Specification: Memory Size - 1k*32-bit, operating voltage 5V, technology file - 0.5um SCMOS Technology
 ---
