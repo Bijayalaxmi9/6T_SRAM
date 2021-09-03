@@ -25,7 +25,7 @@ There are three modes of operations.
 
 6T SRAM cell Block Diagram:
 
-![Blockdiagram](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/6T_SRAMCell.jpg)
+![blockdiagram](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/block_diagram.jpg)
 
 
 6T SRAM cell circuit diagram:
@@ -34,12 +34,8 @@ There are three modes of operations.
 
 All parameters:
 - Vdd=5V
-- For NMOS:
-	- Vtn =0.496v
-	- un =444.9381976 cm^2/Vs
-- For PMOS:
-	- Vtp = -0.6636V
-	- up = 151.3305606 cm^2/Vs
+- For NMOS: Vtn =0.496v, un =444.9381976 cm^2/Vs
+- For PMOS: Vtp = -0.6636V, up = 151.3305606 cm^2/Vs
 Taken V1=0.49
 ---
 ## Read Operations:
@@ -94,15 +90,20 @@ From the DC Analysis we can get the operating point of the CMOS Inverters. Here 
 ---
 ## Hold_SNM
 
+
 ![Hold_SNM](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/SNM_Hold.jpg)
+
 
 
 ![snm_hold_graph](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/snm_hold_graph.jpg)
 
 	 
+	 
 ## Read_SNM
 
+
 ![SNM_READ](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/SNM_Read.jpg)
+
 
 
 ![snm_read](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/snm_read_graph.jpg)
@@ -112,19 +113,25 @@ From the DC Analysis we can get the operating point of the CMOS Inverters. Here 
 ---
 ### Circuit Diagram of SRAM Cell with all Parasitics
 
+
 ![SRAM_PARASITICS](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/sram_parasitics.jpg)
+
 
 
 ![tran_parasitics](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/tran_precharge.jpg)
 
 
+
 ## Sense_Amplifier
+
 
 
 ![sense_amp](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/sense_amp.jpg)
 
 
+
 ![tran_sense_amp](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/tran_sense_amp.jpg)
+
 
 
 ## Write_Driver
@@ -132,7 +139,9 @@ From the DC Analysis we can get the operating point of the CMOS Inverters. Here 
 
 ![Write_driver](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/write_driver.jpg)
 
+
 ![tran_SA_WD](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/tran_SA_WD.jpg)
+
 
 
 ## Acknowledgement
