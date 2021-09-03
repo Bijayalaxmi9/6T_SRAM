@@ -30,11 +30,7 @@ In this project I have designed and characterised the Bit-cell array that all th
 
 
 ## Modes_of_Operations
-There are three modes of operations.
-- Hold State
-- Read Mode
-- Write Mode
-
+There are three modes of operations. 1) Hold State 2) Read Mode 3)Write Mode
 All parameters:
 - Vdd=5V
 - For NMOS: Vtn =0.496v, un =444.9381976 cm^2/Vs
@@ -95,8 +91,9 @@ From the VTC we can get the operating point of the CMOS Inverters. Here it is 1.
 ![snm_hold_graph](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/snm_hold_graph.jpg)
 
 	 
-	 
+---	 
 ## Read_SNM
+
 
 
 ![SNM_READ](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/SNM_Read.jpg)
@@ -111,6 +108,7 @@ From the VTC we can get the operating point of the CMOS Inverters. Here it is 1.
 ### Circuit Diagram of SRAM Cell with all Parasitics
 
 
+
 ![SRAM_PARASITICS](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/sram_parasitics.jpg)
 
 
@@ -122,13 +120,16 @@ In the above circuit diagram consists of SRAM_6T cell with all its parasitics, p
 ![tran_parasitics](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/tran_precharge.jpg)
 
 
+---
 
 ## Sense_Amplifier
 Sense Amplifier generally used to detect the node voltage stored in the memory. It will be operate at the time of Read operation. I have used a latch based Sense amplifier in my design.
 
 
 
+
 ![sense_amp](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/sense_amp.jpg)
+
 
 
 ### Simulation result of 6T SRAM cell with Sense Amplifier
@@ -136,10 +137,12 @@ Sense Amplifier generally used to detect the node voltage stored in the memory. 
 ![tran_sense_amp](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/tran_sense_amp.jpg)
 
 
+---
 
 ## Write_Driver
 
 The write drivers send the input data signals onto the bit-lines for a write operation. The write drivers are tri-stated so that they can be placed between the column multiplexer/memory array and the sense amplifiers. There is one write driver for each input data bit.
+
 
 
 ![Write_driver](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/write_driver.jpg)
@@ -148,10 +151,11 @@ The write drivers send the input data signals onto the bit-lines for a write ope
 ### Simulation result of 6T SRAM cell with Sense Amplifier and Write Driver
 
 
+
 ![tran_SA_WD](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/tran_SA_WD.jpg)
 
 
-
+---
 ## Acknowledgement
 
 -   Dr.Saroj Rout,Associate Professor,Silicon Institute Of Technology,Bhubaneswar
