@@ -1,4 +1,4 @@
-# 6T SRAM
+# Design and simulation of 6T SRAM
 ## Table of Contents:
 
  - [Design of 6T SRAM](#Design_of_6T_SRAM)
@@ -17,20 +17,23 @@
 The project is generally focused on the design of 1k*32-bit 6T SRAM memory design.
 - SRAM Specification: Memory Size - 1k*32-bit, operating voltage 5V, technology file - 0.5um SCMOS Technology
 ---
+
+Block Diagram:
+
+![blockdiagram](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/block_diagram.jpg)
+
+In this project I have designed and characterised the Bit-cell array that all the devices of SRAM-6T cell using NGSpice tool with 0.5um SCMOS technology.
+
+6T SRAM cell circuit diagram:
+
+![Circuit_diagram](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/circuit%20diagram.jpg)
+
+
 ## Modes_of_Operations
 There are three modes of operations.
 - Hold State
 - Read Mode
 - Write Mode
-
-6T SRAM cell Block Diagram:
-
-![blockdiagram](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/block_diagram.jpg)
-
-
-6T SRAM cell circuit diagram:
-
-![Circuit_diagram](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/circuit%20diagram.jpg)
 
 All parameters:
 - Vdd=5V
@@ -70,12 +73,7 @@ Here Id3=Id5, after solving this we get,
 ![eq-2 for write operations](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/Eq-2.jpeg)
 
 
-So after solving above two equations by putting all the required values we get,
-
-![eq-3 (W5/W3)](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/Eq-3.jpeg)
-
-
-![eq-4(W3/W1)](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/Eq-4.jpeg)	     
+So after solving above two equations by putting all the required values we get, w5/w3<0.66 and w3/w1<0.26.	     
 
 Here 
 - **W5**=0.6um, **L5**=0.4um
@@ -85,9 +83,8 @@ Here
 ## Pre-layout
 ## DC_Analysis:
 
-From the DC Analysis we can get the operating point of the CMOS Inverters. Here it is 1.12V.
+From the VTC we can get the operating point of the CMOS Inverters. Here it is 1.12V.
 
----
 ## Hold_SNM
 
 
@@ -117,18 +114,24 @@ From the DC Analysis we can get the operating point of the CMOS Inverters. Here 
 ![SRAM_PARASITICS](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/sram_parasitics.jpg)
 
 
+In the above circuit diagram consists of SRAM_6T cell with all its parasitics, precharged circuit, sense amplifier and write driver.As 1kx32-bit SRAM consists of 32k of bit cells, so it can taken as 128*256 number of cells(i.e. 128 number of rows and 256 number of columns). For Simulation we are taking one 6T SRAM cell with the parasitic capacitor of all the cells. cw1, cw2, cw3 are the wire load capacitors(10fF/cell) which are connected to BIT, complementary BIT and word line. Simillarly M6, M7, M8, M9 are the parasitic mosfets which is equaly do the operation like 1kx32-bit cell array. Here I have done a Transiant analysis(excluding sense Amp and write driver).
+
+### Transient Analysis
+
 
 ![tran_parasitics](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/tran_precharge.jpg)
 
 
 
 ## Sense_Amplifier
+Sense Amplifier generally used to detect the node voltage stored in the memory. It will be operate at the time of Read operation. I have used a latch based Sense amplifier in my design.
 
 
 
 ![sense_amp](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/sense_amp.jpg)
 
 
+### Simulation result of 6T SRAM cell with Sense Amplifier
 
 ![tran_sense_amp](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/tran_sense_amp.jpg)
 
@@ -136,8 +139,13 @@ From the DC Analysis we can get the operating point of the CMOS Inverters. Here 
 
 ## Write_Driver
 
+The write drivers send the input data signals onto the bit-lines for a write operation. The write drivers are tri-stated so that they can be placed between the column multiplexer/memory array and the sense amplifiers. There is one write driver for each input data bit.
+
 
 ![Write_driver](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/write_driver.jpg)
+
+
+### Simulation result of 6T SRAM cell with Sense Amplifier and Write Driver
 
 
 ![tran_SA_WD](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/tran_SA_WD.jpg)
