@@ -1,24 +1,23 @@
 # 6T SRAM
 ## Table of Contents:
 
- - [Overview](#Overview)
- - [Sizing & Modes of Operations](#Sizing_&_Modes_of_Operations)
+ - [Design of 6T SRAM](#Design_of_6T_SRAM)
+ - [Modes of Operations](#Modes_of_Operations)
  - [Pre-layout](#Pre-layout)
 	 - [DC Analysis](#DC_Analysis)
 	 - [Hold SNM](#Hold_SNM)
 	 - [Read SNM](#Read_SNM)
+	 - [Sense Amplifier](#Sense_Amplifier)
+	 - [Write Driver](#Write_driver)
 - [Acknowledgement](#Acknowledgement)
 - [Future Works](#Future_works)
 - [Contact Information](#Contact_Information)
 - ----
-## Overview
+## Design_6T_SRAM
 The project is generally focused on the design of 1k*32-bit 6T SRAM memory design.
-- SRAM Specification:
-	 - Memory Size - 1k*32-bit
-	 - Operating voltage - 5V
-	 - Technology file - 0.5um SCMOS Technology
+- SRAM Specification: Memory Size - 1k*32-bit, operating voltage 5V, technology file - 0.5um SCMOS Technology
 ---
-## Sizing_&_Modes_of_Operations
+## Modes_of_Operations
 There are three modes of operations.
 - Hold State
 - Read Mode
@@ -31,7 +30,7 @@ There are three modes of operations.
 
 6T SRAM cell circuit diagram:
 
-![6T SRAM circuit diagram](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/6tsram.jpg)
+![Circuit_diagram](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/circuit%20diagram.jpg)
 
 All parameters:
 - Vdd=5V
@@ -90,38 +89,58 @@ Here
 ## Pre-layout
 ## DC_Analysis:
 
-
-![VTC_inverter](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/VTC_inverter.png)
-
 From the DC Analysis we can get the operating point of the CMOS Inverters. Here it is 1.12V.
 
 ---
 ## Hold_SNM
 
-![SNM_Hold diag](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/SNM_Hold.jpg)
+![Hold_SNM](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/SNM_Hold.jpg)
 
 
+![snm_hold_graph](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/snm_hold_graph.jpg)
 
-![Hold_SNM](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/SNM_Hold.png)
 	 
-
 ## Read_SNM
 
-![SNM_Read_diag](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/SNM_Read.jpg)
+![SNM_READ](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/SNM_Read.jpg)
 
 
+![snm_read](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/snm_read_graph.jpg)
 
-![Read_SNM](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/SNM_Read.png)
    
 
 ---
+### Circuit Diagram of SRAM Cell with all Parasitics
+
+![SRAM_PARASITICS](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/sram_parasitics.jpg)
+
+
+![tran_parasitics](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/tran_precharge.jpg)
+
+
+## Sense_Amplifier
+
+
+![sense_amp](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/sense_amp.jpg)
+
+
+![tran_sense_amp](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/tran_sense_amp.jpg)
+
+
+## Write_Driver
+
+
+![Write_driver](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/write_driver.jpg)
+
+![tran_SA_WD](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/tran_SA_WD.jpg)
+
+
 ## Acknowledgement
 
 -   Dr.Saroj Rout,Associate Professor,Silicon Institute Of Technology,Bhubaneswar
 -   Mr.Santunu Sarangi,Assistant Professor,Silicon Institute Of Technology,Bhubaneswar
 - ---
 ## Future_Works
--   Transient Analysis
 - To create the layout using Magic.
 -   To do post layout simulation.
 - ---
