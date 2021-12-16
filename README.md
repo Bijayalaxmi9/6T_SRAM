@@ -2,9 +2,9 @@
 ## Table of Contents:
 
  - [Design of 6T SRAM](#Design-of-6T-SRAM)
- - [Modes of Operations](#Modes_of_Operations)
+ - [Modes of Operations](#Modes-of-Operations)
  - [Pre-layout](#Pre-layout)
-	 - [DC Analysis](#DC_Analysis)
+	 - [DC Analysis](#DC-Analysis)
 	 - [Hold SNM](#Hold_SNM)
 	 - [Read SNM](#Read_SNM)
 	 - [Sense Amplifier](#Sense_Amplifier)
@@ -29,7 +29,7 @@ In this project I have designed and characterised the Bit-cell array that all th
 ![Circuit_diagram](https://github.com/Bijayalaxmi9/6T_SRAM/blob/main/Images/circuit%20diagram.jpg)
 
 
-## Modes_of_Operations
+## Modes of Operations
 There are three modes of operations. 1) Hold State 2) Read Mode 3)Write Mode
 All parameters:
 - Vdd=5V
@@ -77,7 +77,7 @@ Here
 - **W1**=4um, **L1**=0.4um
 ---
 ## Pre-layout
-## DC_Analysis:
+## DC Analysis:
 
 From the VTC we can get the operating point of the CMOS Inverters. Here it is 1.12V.
 
